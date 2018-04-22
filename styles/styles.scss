@@ -8,38 +8,56 @@ body {
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    min-height: 100%;
+}
+
+.main-header__nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.22);
 }
 
 .main-header {
-    position: relative;
     background: #000 url(../images/main-image.png) no-repeat top center;
     background-size: cover;
     height: 100vh;
 
+    .wrapper { 
+        display: flex; /* Making the .wrapper flex here allows me to flex-grow on the splash text area so it fills the remiaining height under nav and above 100vh. */
+        flex-direction: column;
+    }
+
     &__nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 23px 0;
- 
+        align-items: flex-end;
+        padding: 23px 0 27px 0;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.22);
+        position: relative; /* Position: relative so that I can use absolute position on the after element double underline. */
+        
         &__container {
-            margin-right: auto;
-            width: 28%;
+            width: 28%; /* Spacing pulled off Adobe Assets */
+        
+            &__img {
+                display: block;    /* Display:Block to get rid of ghost space around image */           
+            }
         }
 
         &__ul {
             display: flex;
-            padding: 0;
-            margin: 0;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            height: 75%;
+            padding: 0; /* Don't love normalize, I just end up removing the styles more then anything. */
+            margin: 0; /* Don't love normalize, I just end up removing the styles more then anything. */
+            justify-content: space-between;
+            // align-items: center;
+            // flex-wrap: wrap;
             flex-grow: 1;
 
             li {
                 list-style: none;
-                flex-shrink: 0;
             }
         }
 
@@ -49,6 +67,34 @@ body {
             background: #e85889;
             width: 44px;
             height: 44px;
+            padding: 0;
+        }
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        & > * {
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        &__a {
+            // width: calc(214/1170*100%);
+            // height: calc(52/(900 - 130)*100%);
+            margin-top: 30px;
+            width: 214px;
+            height: 52px;
+            background: #e85889;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
+

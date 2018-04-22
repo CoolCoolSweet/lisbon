@@ -8,6 +8,17 @@ html {
 
 h1 {
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main-header {
@@ -17,15 +28,21 @@ h1 {
     &__nav {
         font-size: 1.5rem;
         font-weight: 600;
+        text-transform: uppercase;
     
         &__button i {
             color: #fff;
         }
     }
 
-    &__nav__ul li a {
-        color: #fff;
-        text-decoration: none;
+    &__section {
+
+        &__a {
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
     }
 
 }
