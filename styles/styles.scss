@@ -21,6 +21,7 @@ body {
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
+        padding: 23px 0;
  
         &__container {
             margin-right: auto;
@@ -40,6 +41,14 @@ body {
                 list-style: none;
                 flex-shrink: 0;
             }
+        }
+
+        &__button {
+            border-radius: 50%;
+            border: none;
+            background: #e85889;
+            width: 44px;
+            height: 44px;
         }
     }
 }

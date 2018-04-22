@@ -17,10 +17,15 @@ h1 {
     &__nav {
         font-size: 1.5rem;
         font-weight: 600;
+    
+        &__button i {
+            color: #fff;
+        }
     }
 
     &__nav__ul li a {
         color: #fff;
         text-decoration: none;
     }
+
 }
