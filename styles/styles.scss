@@ -23,6 +23,7 @@ body {
     background: #000 url(../images/main-image.png) no-repeat top center;
     background-size: cover;
     height: 100vh;
+    max-height: 900px;
 
     .wrapper { 
         display: flex; /* Making the .wrapper flex here allows me to flex-grow on the splash text area so it fills the remiaining height under nav and above 100vh. */
