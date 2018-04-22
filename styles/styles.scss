@@ -1,5 +1,45 @@
 @import "partials/setup";
+@import "partials/typography";
 
 body {
     background: mediumslateblue;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-header {
+    position: relative;
+    background: #000 url(../images/main-image.png) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+ 
+        &__container {
+            margin-right: auto;
+            width: 28%;
+        }
+
+        &__ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 1;
+
+            li {
+                list-style: none;
+                flex-shrink: 0;
+            }
+        }
+    }
 }
