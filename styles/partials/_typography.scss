@@ -16,9 +16,23 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color :#222222;
+    font-size: 26px;/* Approximation due to font substitution */
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .main-header {
@@ -51,4 +65,41 @@ a {
 
     }
 
+}
+
+.countdown {
+
+    &__container {
+
+        &__number {
+            font-family: 'Poppins', sans-serif;
+            color:#ffffff;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .time-name {
+            color:#777777;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+    }
+    .container1 {
+        
+        p {
+            color: #777777;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .container3 {
+        font-family: 'Raleway', sans-serif;
+        color:#ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 }

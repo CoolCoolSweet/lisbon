@@ -99,6 +99,10 @@ body {
 
 .countdown {
 
+    background: #fafafa;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.03);
+    padding: 87px 0;
+    
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -107,6 +111,7 @@ body {
     &__container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     
         &__number {
             background-color:#333333;
@@ -125,26 +130,45 @@ body {
             background: #e85889;
             border-radius: 5px;
             text-align: center;
+            margin-left: 13px;
         }
 
         .colon {
-            margin: 0 7px 0 5px;
+            margin: 0 6px 0 4px;
+            font-family: 'Poppins', sans-serif;
+            color: #333333;
+            font-size: 22px;/* Approximation due to font substitution */
+            font-weight: 300;
+            line-height: 45px;
+            letter-spacing: -0.7px;
         }
+
+        .time-name {
+            margin-top: 19px;
+        }
+
     }
 
     .container1 {
         flex-direction: column;
-        width: 25%;
+        justify-content: center;
+        width: 29%;
+
+        p {
+            margin-bottom: 17px;
+        }
+
     }
 
     .container2 {
         // width: calc((35/100)*1170px);
         // width: 35%;
-        flex-shrink: 0;
     }
 
     .container3 {
-        width: 40%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-grow: 1;
     }
 }
 
