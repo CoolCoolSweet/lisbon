@@ -99,3 +99,21 @@ body {
     }
 }
 
+.countdown {
+
+    .wrapper {
+        display: flex;
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container1 {
+        flex-direction: column;
+        width: 25%;
+    }
+
+}
+
