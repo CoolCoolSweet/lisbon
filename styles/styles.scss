@@ -322,7 +322,7 @@ body {
     }
 
     .pictures {
-        margin-right: 9%;
+        margin-right: 107px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -361,5 +361,55 @@ body {
 
     .quote-text {
         margin: 32px 0 36px 0;
+    }
+}
+
+.pricing {
+    background: url(../images/pricing-image.png) no-repeat top center;
+    padding: 160px 0 110px 0;
+    text-align: center;
+
+    & .wrapper > p {
+        margin: 20px 0 84px 0;
+    }
+
+    .container-of-containers {
+        background-color:#fff;
+        box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+        padding: 30px;
+        display: flex;
+
+        .container {
+            background: #fafafa;
+            border: 1px solid #ececec;
+            padding: 52px 0;
+
+            p:first-of-type {
+                margin: 17px 0 58px 0;
+            }
+
+            ul {
+                margin: 38px 0 20px 0;
+            }
+            li {
+                padding: 18px 68px;
+                border-top: 1px dashed #e0e0e0;
+                border-bottom: 1px dashed #e0e0e0;
+            }
+
+            li:last-of-type {
+                border-bottom: none;
+            }
+
+            a {
+                background-color: #e85889;
+                width: 178px;
+                line-height: 52px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 5px;
+                
+            }
+        }
     }
 }
