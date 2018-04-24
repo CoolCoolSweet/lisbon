@@ -14,15 +14,38 @@ h1 {
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    color :#222222;
-    font-size: 26px;/* Approximation due to font substitution */
-    font-weight: 700;
+    color:#222222;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color :#222222;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;    
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color:#222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; 
 }
 
 a {
@@ -69,6 +92,8 @@ p {
 
 .countdown {
 
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.03);
+
     &__container {
 
         &__number {
@@ -98,8 +123,37 @@ p {
     .container3 {
         font-family: 'Raleway', sans-serif;
         color:#ffffff;
-        font-size: 15px;
+        font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
+    }
+}
+
+.about {
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        color:#777777;
+        font-size: 1.7rem;
+        font-style: italic;
+    }
+    
+    .container {
+        
+        box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            color:#777777;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        a {
+            font-family: 'Poppins', sans-serif;
+            color:#e85889;
+            font-size: 1.6rem;
+            font-style: italic;
+        }
     }
 }

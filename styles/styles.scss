@@ -2,7 +2,6 @@
 @import "partials/typography";
 
 body {
-    background: mediumslateblue;
 }
 
 .wrapper {
@@ -112,10 +111,13 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    
+        
+        .numbers {
+            display: flex;
+        }
+
         &__number {
             background-color:#333333;
-            float: left;
             margin-right: 2px;
             border-radius: 5px;
             width: 37px;
@@ -152,17 +154,12 @@ body {
     .container1 {
         flex-direction: column;
         justify-content: center;
-        width: 29%;
+        width: 341px;
 
         p {
             margin-bottom: 17px;
         }
 
-    }
-
-    .container2 {
-        // width: calc((35/100)*1170px);
-        // width: 35%;
     }
 
     .container3 {
@@ -175,22 +172,47 @@ body {
 .about {
     padding: 151px 0;
 
+    &__title, &__text {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 20px 0 82px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 63px;
+            position: absolute;
+            bottom: -32px;
+            left: 50%;
+            border-bottom: 1px solid #e85889;
+            transform: translateX(-50%);
+        }
+    }
+
     .container-of-containers {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
     }
 
     .container {
-        width: calc(1170px*.94/3);
+        width: 367px;
+
         .text-container {
+            padding: 43px 44px 43px 27px;
         }
 
         img {
             width: 100%;
+            display: block;
         }
+
         p {
-            font-size: 50px;
+            margin: 22px 0 25px 0;
+            line-height: 26px;
         }
     }
 
