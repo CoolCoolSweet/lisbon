@@ -187,7 +187,29 @@ p {
 }
 
 .event-speakers {
-    .title, .text-blurb {
-        text-align: center;
-    } 
+   
+    .text-blurb {
+        font-family: 'Poppins', sans-serif;
+        color:#777777;
+        font-size: 17px;
+        font-style: italic;
+    }
+
+    .name {
+        font-family: 'Raleway', sans-serif;
+        color:#222222;
+        font-size: 1.6rem; 
+        font-weight: 600;
+            }
+
+    .position {
+        font-family: 'Poppins', sans-serif;
+        color:#777777;
+        font-size: 14px;
+        font-weight: 400;
+
+        span {
+            font-size: 13px;
+        }
+    }
 }
