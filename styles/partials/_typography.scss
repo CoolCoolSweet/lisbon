@@ -137,7 +137,7 @@ p {
         font-size: 1.7rem;
         font-style: italic;
     }
-    
+
     .container {
         
         box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
@@ -155,5 +155,33 @@ p {
             font-size: 1.6rem;
             font-style: italic;
         }
+    }
+}
+
+.join-our-event {
+    h2 {
+        color: #fff;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    input:nth-of-type(1) {
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    input:nth-of-type(2) {
+        font-family: 'Raleway', sans-serif;
+        color:#fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 }

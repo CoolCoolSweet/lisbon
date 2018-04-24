@@ -218,3 +218,39 @@ body {
 
 }
 
+.join-our-event {
+    padding: 113px 0;
+    background-image: url(../images/Pattern.png);
+    text-align: center;
+
+    p {
+        margin: 38px auto;
+        line-height: 26px;
+        width: 75%;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    input:nth-of-type(1) {
+        border-radius: 5px 0 0 5px;
+        border: solid 1px #fff;
+        border-right: none;
+        background-color:rgba(70, 63, 140, 0);
+        width: 360px;
+        height: 51px;
+        padding-left: 25px;
+        flex-shrink: 1;
+    }
+
+    input:nth-of-type(2) {
+        background-color:#e85889;
+        width: 174px;
+        height: 51px;
+        border: none;
+        border-radius: 0 5px 5px 0;   
+    }
+    
+}
