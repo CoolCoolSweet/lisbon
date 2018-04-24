@@ -213,3 +213,35 @@ p {
         }
     }
 }
+
+.quotes {
+    .quote-title {
+        font-family: 'Raleway', sans-serif;
+        color:#fafafa;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 46px;
+    }
+
+    .quote-text {
+        font-family: 'Poppins', sans-serif;
+        color:#bfb9f6;
+        font-size: 1.7rem;
+        font-style: italic;
+        line-height: 2.8rem;
+    }
+
+    .author {
+        font-family: 'Poppins', sans-serif;
+        color:#bfb9f6;
+        font-size: 1.7rem;
+        font-style: italic;
+
+        span {
+        color:#fafafa;
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-style: normal
+        }
+    }
+}
