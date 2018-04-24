@@ -275,11 +275,18 @@ p, ul { /* Normalize is so great........ /s */
         
         .container {
             
-            p:first-of-type {
+            .plan-type {
                 font-family: 'Poppins', sans-serif;
                 color:#777777;
                 font-size: 1.4rem;
                 font-weight: 300;
+            }
+
+            .banner {
+                font-family: 'Raleway', sans-serif;
+                color:#ffffff;
+                font-size: 1.3rem;
+                font-weight: 500;
             }
 
             .price {

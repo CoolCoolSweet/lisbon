@@ -383,9 +383,31 @@ body {
             background: #fafafa;
             border: 1px solid #ececec;
             padding: 52px 0;
+            position: relative;
+            overflow: hidden;
 
-            p:first-of-type {
+            .banner {
+                position: absolute;
+                display: block;
+                padding: 10px 30px;
+                background: #463f8c;
+                right: 0;
+                transform: translate(25%, -100%) rotate(45deg);                
+            }
+
+            .plan-type {
                 margin: 17px 0 58px 0;
+                position: relative;
+            
+                &::after {
+                    content: "";
+                    width: 34px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -17px;
+                    border-bottom: 1px solid #463f8c;
+                    transform: translateX(-50%);
+                }
             }
 
             ul {
