@@ -332,3 +332,35 @@ p, ul { /* Normalize is so great........ /s */
     }
 
 }
+
+.event-schedule {
+
+    .text {
+        font-family: 'Poppins', sans-serif;
+        color:#777777;
+        font-size: 1.7rem;
+        font-style: italic;
+    }
+
+    li {
+        font-family: 'Poppins', sans-serif;
+   
+        p:nth-of-type(1) {
+            color:#b7b7b7;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+        }
+
+        p:nth-of-type(2) {
+            font-family: Poppins;
+            color:#222222;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.6rem;
+        }
+
+    }
+
+}
+

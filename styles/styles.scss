@@ -1,9 +1,6 @@
 @import "partials/setup";
 @import "partials/typography";
 
-body {
-}
-
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
@@ -432,6 +429,141 @@ body {
                 border-radius: 5px;
                 
             }
+        }
+    }
+}
+
+.event-schedule {
+    margin-left: 3px;
+    padding: 181px 0 106px 0;
+    text-align: center;
+    background: #fafafa;
+
+    .container-of-containers,  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        flex-wrap: wrap;
+        
+        .sched {
+            ul {
+                border: solid 1px #ececec;
+                background-color: #fff;
+                width: 281px;
+                list-style: none;
+
+                li {
+                    padding: 23px 29px;
+                    border-bottom: solid 1px #ececec;
+                    
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+
+        .container {
+            padding-left: 58px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    height: 335px;
+                    border-left: 1px dashed #777;
+                    top: 51px;
+                    left: -2px;
+            }
+
+        }
+
+        .profile {
+            display: flex;
+            
+            
+            img {
+                width: 82px;
+                height: 82px;
+                border-radius: 50%;
+                border: solid 7px #ececec;
+                box-sizing: content-box;
+                margin-right: 35px;
+                display: block;
+            }
+
+            .img-box {
+                position: relative;
+            }
+
+            .img-box::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 48px;
+                    width: 31px;
+                    border-bottom: 1px dashed #777;
+                    left: -28px;
+                    transform: translate(-100%, -50%);
+            }
+
+
+            .text-container {
+                font-family: 'Raleway', sans-serif;
+                max-width: 650px;
+
+                .author {
+                    color: #222222;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                .time {
+                    margin-left: 20px;
+                    color:#777777;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+
+                .title {
+                    color:#222222;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+
+                .blurb {
+                    font-family: 'Poppins', sans-serif;
+                    color:#666666;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+        .profile2 {
+            margin: 66px 0;
+        }
+    }
+
+    .text {
+        margin: 20px 0 87px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 63px;
+            position: absolute;
+            left: 50%;
+            bottom: -32px;
+            border-bottom: 1px solid #e85889;
+            transform: translateX(-50%);
         }
     }
 }
