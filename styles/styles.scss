@@ -1,6 +1,10 @@
 @import "partials/setup";
 @import "partials/typography";
 
+body {
+    min-width: 360px; /* gotta stop this responsive madness somewhere and there is the smallest width I chose to target. */
+}
+
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
@@ -783,6 +787,48 @@ footer {
     }
 
 }
+
+
+// *********** HOVER STATES ***********
+
+.cool-hover-effect:hover {
+    background: #463f8c !important; /* This is because I ran into HUGE specficity issues using SASS for the first time and am slapping classes on for hover states at the last minute. I know this is probably frowned upon. Desperate time calls for desperate measures. I would generally not use !important in normal cases. */
+    box-shadow: 0 0 30px #463f8c !important; 
+    p {
+        color: #fff;
+    }
+}
+
+.cool-hover-effect-2:hover {
+    color: #463f8c !important; 
+}
+.cool-hover-effect-3:hover {
+    border: 1px solid #e85889 !important; 
+    box-shadow: 0 0 30px #e85889 !important;
+}
+
+.event-schedule {
+    .wrapper {
+        .container-of-containers{
+            .sched ul li:hover {
+                background: #e85889;
+                p {
+                color: #fff;
+                }
+            }
+        }
+    }
+}
+
+nav {
+ ul{
+     li a:hover {
+         color: #e85889;
+     }
+ }
+}
+
+
 
 @media (max-width: 1156px) {
 
