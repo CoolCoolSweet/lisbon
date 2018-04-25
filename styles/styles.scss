@@ -1031,6 +1031,14 @@ footer {
 
 @media (max-width: 715px) {
 
+    .pricing .container-of-containers .container ul li:nth-of-type(1), .pricing .container-of-containers .container ul li:nth-of-type(2) {
+        border-bottom: none;
+    }
+
+    .pricing .container-of-containers .container ul li:nth-of-type(2n) {
+        border-left: none;
+    }
+
     .pricing .container-of-containers .container ul li {
         width: 100%;
         border: none;
@@ -1153,4 +1161,13 @@ footer {
                 
             }
     }
+}
+
+footer ul {
+    flex-wrap: wrap;
+    li{
+        width: calc(100%/3);
+        margin: 5px 0;
+    }
+}
 }
