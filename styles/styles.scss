@@ -792,7 +792,7 @@ footer {
 // *********** HOVER STATES ***********
 
 .cool-hover-effect:hover {
-    background: #463f8c !important; /* This is because I ran into HUGE specficity issues using SASS for the first time and am slapping classes on for hover states at the last minute. I know this is probably frowned upon. Desperate time calls for desperate measures. I would generally not use !important in normal cases. */
+    background: #463f8c !important; /* This is because I ran into HUGE specficity issues using SASS for the first time and am slapping classes on for hover states at the last minute. I know this is probably frowned upon. Desperate times calls for desperate measures. I would generally not use !important in normal cases. */
     box-shadow: 0 0 30px #463f8c !important; 
     p {
         color: #fff;
@@ -960,6 +960,10 @@ nav {
             .container {
                 margin: 0 auto;
                 width: 45%;
+
+                &1, &2 {
+                    margin-bottom: 20px;
+                }
                 img {
                     width: 100%;
                 }  
