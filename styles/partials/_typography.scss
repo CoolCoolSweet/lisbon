@@ -418,3 +418,29 @@ p, ul { /* Normalize is so great........ /s */
         font-weight: 400;
     }
 }
+
+.newsletter {
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        color:#222222;
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: none;
+    }
+
+    input[type="submit"] {
+        font-family: 'Poppins', sans-serif;
+        color:#ffffff;
+        font-size: 14px;
+        font-weight: 800; /* Assets said 400 but 800 looks right and better. */
+    }
+
+    input[type="email"] {
+        font-family: 'Poppins', sans-serif;
+        color: #999999;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
