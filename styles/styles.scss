@@ -697,3 +697,62 @@
         border: none;
     }
 }
+
+.contacts {
+    padding: 40px 0;
+    background: #1b1b1b;
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container {
+        width: calc(100%/3);
+        display: flex;
+
+        p {
+            width: 222px;
+        }
+     }
+
+    .container2 {
+        border-left: 1px solid rgba(88, 88, 88, 0.58);
+        border-right: 1px solid rgba(88, 88, 88, 0.58);
+        justify-content: center;
+
+        p {
+            width: 120px;
+        }
+    }
+
+    .container3 {
+        justify-content: right;
+        p {
+            width: 150px;
+        }
+    }
+
+    .icon {
+        border-radius: 50%;
+        background-color: #2f2f2f;
+        width: 58px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 36px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-bottom: #000 25px solid;
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
