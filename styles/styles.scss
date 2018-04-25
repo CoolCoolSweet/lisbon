@@ -567,3 +567,102 @@
         }
     }
 }
+
+.latest-news {
+
+    padding: 151px 0;
+
+    .text {
+        margin: 20px 0 87px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 63px;
+            position: absolute;
+            left: 50%;
+            bottom: -32px;
+            border-bottom: 1px solid #e85889;
+            transform: translateX(-50%);
+        }
+    }
+
+    .container-of-containers {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .container {
+            // width: calc(370/1170 * 100%);
+            width: 370px;
+            height: 300px;
+            background: #fafafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+
+            img {
+                display: block;
+                text-align: center;
+            }
+
+            &2,&4,&5,&6 {
+                padding: 42px 37px;
+            }
+
+            &4, &5 {
+                margin-top: 30px;
+            }
+
+            &2 {
+
+                // width: calc(100% - (370*300/1170/2) + 370px);
+                // width: calc((370/1170 + ((1 - (370*3/1170))/2))* 100%);
+                width: 400px;
+                margin-right: auto;
+            }
+
+            &3 {
+
+                background: mediumslateblue;
+                img {
+                    margin-left: auto;
+                }
+            }
+
+            &5 {
+                background: linear-gradient(#463f8c, #463f8c 50%, #fafafa 50%, #fafafa);
+                margin-right: auto;
+                margin-left: 30px;
+                align-items: center;
+
+                a {
+                    align-self: flex-start;
+                }
+
+                img {
+                    margin-bottom: 31px;
+                }
+            }
+
+            &6 {
+                height: 330px;
+                padding-top: 30px;
+            }
+            a {
+                border-radius: 5px;
+                background-color:#e85889;
+                width: 152px;
+                line-height: 44px;
+                display: block;
+                text-align: center;
+                margin-top: auto;
+            }
+
+            .blurb {
+                margin-top: 38px;
+            }
+        }
+    }
+}
