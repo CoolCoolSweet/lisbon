@@ -756,3 +756,34 @@
         transform: translateX(-50%);
     }
 }
+
+footer {
+    padding: 47px 0 90px 0;
+    background: #000;
+    text-align: center;
+    position: relative;
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 613px;
+        justify-content: space-between;
+        margin: 0 auto 27px auto;
+        padding: 40px 0;
+        border-bottom: 1px solid #1b1b1b;
+    }
+
+    &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 800;
+        content: "\f106";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        color: #fff;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
